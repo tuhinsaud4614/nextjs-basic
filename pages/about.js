@@ -1,17 +1,13 @@
 import Head from "next/head";
-import Link from "next/link";
 
-import styles from "../styles/Home.module.css";
-
-export default function Home() {
+const About = () => {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>About</title>
       </Head>
-  
-      <h1 className={`${styles.title}`}>Home</h1>
-      <p className={`${styles.text}`}>
+      <h1>About</h1>
+      <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -19,7 +15,7 @@ export default function Home() {
         centuries, but also the leap into electronic typesetting, remaining
         essentially unchanged.
       </p>
-      <p className={`${styles.text}`}>
+      <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -27,9 +23,8 @@ export default function Home() {
         centuries, but also the leap into electronic typesetting, remaining
         essentially unchanged.
       </p>
-      <Link href="/hello">
-        <a className={`${styles.btn}`}>See Hello Listing</a>
-      </Link>
     </div>
   );
-}
+};
+
+export default About;
